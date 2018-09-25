@@ -104,8 +104,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/ICASA_00093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ICASA_00094>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ICASA_00095>))
 Declaration(Class(<http://purl.obolibrary.org/obo/ICASA_00096>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ICASA_00098>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ICASA_00001>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ICASA_00002>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/ICASA_00097>))
 ############################
 #   Annotation Properties
 ############################
@@ -117,6 +119,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00001> "cod
 # Annotation Property: <http://purl.obolibrary.org/obo/ICASA_00002> (codeQuery)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00002> "codeQuery"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/ICASA_00097> (unit)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00097> "unit"@en)
 
 
 
@@ -188,56 +194,94 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00015> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00016> (nitrogen_applications_season)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00016> "Nitrogen applications, total number at end season")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00016> "FEN_#")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00016> "FEN_no")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00016> "nitrogen_applications_season"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00016> <http://purl.obolibrary.org/obo/ICASA_00007>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00017> (nitrogen_season)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00017> "Nitrogen, total amount over season")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00017> "FEN_TOT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00017> "FEN_TOT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00017> "kg[N]/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00017> "nitrogen_season"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00017> <http://purl.obolibrary.org/obo/ICASA_00007>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00018> (fertilization_date)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00018> "Fertilization date")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00018> "FEDATE")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00018> "FEDATE")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00018> "fertilization_date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00018> <http://purl.obolibrary.org/obo/ICASA_00015>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00019> (fertilization_material)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00019> "Fertilizer material")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00019> "FECD")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00019> "FECD")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00019> "fertilization_material"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00019> <http://purl.obolibrary.org/obo/ICASA_00015>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00020> (fertilizer_application_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00020> "Fertilizer application depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00020> "FEDEP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00020> "FEDEP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00020> "cm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00020> "fertilizer_application_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00020> <http://purl.obolibrary.org/obo/ICASA_00015>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00021> (fertilizer_application_method)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00021> "Fertilizer application method")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00021> "FEACD")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00021> "FEACD")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00021> "fertilizer_application_method"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00021> <http://purl.obolibrary.org/obo/ICASA_00015>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00022> (nitrogen_in_applied_fertilizer)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00022> "FEAMN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00022> "Nitrogen in applied fertilizer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00022> "FEAMN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00022> "kg[N]/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00022> "nitrogen_in_applied_fertilizer"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00022> <http://purl.obolibrary.org/obo/ICASA_00015>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00023> (field_latitude)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00023> "Field latitude")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00023> "FL_LAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00023> "FL_LAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00023> "decimal degrees")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00023> "field_latitude"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00023> <http://purl.obolibrary.org/obo/ICASA_00008>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00024> (field_longitude)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00024> "Field longitude, E positive, W negative")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00024> "FL_LONG")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00024> "FL_LONG")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00024> "decimal degrees")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00024> "field_longitude"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00024> <http://purl.obolibrary.org/obo/ICASA_00008>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00025> (cultivar_name)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00025> "Cultivar name")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00025> "CUL_NAME")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00025> "CUL_NAME")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00025> "cultivar_name"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00025> <http://purl.obolibrary.org/obo/ICASA_00009>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00026> (ICASA_crop_identifier)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00026> "Crop (or weed) species identifier")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00026> "CRID")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00026> "CRID")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00026> "ICASA_crop_identifier"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00026> <http://purl.obolibrary.org/obo/ICASA_00009>)
 
@@ -248,47 +292,82 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00027> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00028> (initial_profile_inorganic_nitrogen)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00028> "Initial profile inorganic nitrogen amount")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00028> "ICIN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00028> "ICIN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00028> "kg[N]/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00028> "initial_profile_inorganic_nitrogen"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00028> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00029> (residue_above_ground_weight)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00029> "Residue above-ground weight, dry weight basis")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00029> "ICRAG")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00029> "ICRAG")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00029> "kg/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00029> "residue_above_ground_weight"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00029> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00030> (residue_incorporation_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00030> "Residue incorporation depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00030> "ICRDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00030> "ICRDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00030> "cm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00030> "residue_incorporation_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00030> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00031> (residue_previous_crop)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00031> "Residue, crop code for previous crop")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00031> "ICPCR")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00031> "ICPCR")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00031> "residue_previous_crop"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00031> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00032> (root_weight_previous_crop)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00032> "Root weight from previous crop")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00032> "ICRT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00032> "ICRT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00032> "kg/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00032> "root_weight_previous_crop"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00032> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
-# Class: <http://purl.obolibrary.org/obo/ICASA_00033> (layer_initial_nh4_concentration)
+# Class: <http://purl.obolibrary.org/obo/ICASA_00033> (layer_initial_ammonium_concentration)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00033> "layer_initial_nh4_concentration"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00033> "Initial NH4 concentration, as elemental N on dry weight basis by layer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00033> "ICNH4")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00033> "ICNH4")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00033> "ppm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00033> "layer_initial_ammonium_concentration"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00033> <http://purl.obolibrary.org/obo/ICASA_00027>)
 
-# Class: <http://purl.obolibrary.org/obo/ICASA_00034> (layer initial_no3_concentration)
+# Class: <http://purl.obolibrary.org/obo/ICASA_00034> (layer_initial_nitrate_concentration)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00034> "layer initial_no3_concentration"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00034> "Initial NO3 concentration, as elemental N on dry weight basis by layer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00034> "ICNO3")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00034> "ICNO3")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00034> "ppm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00034> "layer_initial_nitrate_concentration"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00034> <http://purl.obolibrary.org/obo/ICASA_00027>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00035> (layer_initial_water_concentration)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00035> "Initial water concentration by layer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00035> "ICH2O")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00035> "ICH2O")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00035> "unitless")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00035> "layer_initial_water_concentration"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00035> <http://purl.obolibrary.org/obo/ICASA_00027>)
 
-# Class: <http://purl.obolibrary.org/obo/ICASA_00036> (soil_base_layer_depth)
+# Class: <http://purl.obolibrary.org/obo/ICASA_00036> (initial_soil_base_layer_depth)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00036> "soil_base_layer_depth"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00036> "Soil layer base depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00036> "ICBL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00036> "ICBL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00036> "cm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00036> "initial_soil_base_layer_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00036> <http://purl.obolibrary.org/obo/ICASA_00027>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00037> (automatic_irrigation)
@@ -303,96 +382,159 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00038> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00039> (irrigation_amount_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00039> "Irrigation amount, depth of water")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00039> "IRVAL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00039> "IRVAL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00039> "mm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00039> "irrigation_amount_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00039> <http://purl.obolibrary.org/obo/ICASA_00038>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00040> (irrigation_date)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00040> "Irrigation date")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00040> "IDATE")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00040> "IDATE")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00040> "irrigation_date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00040> <http://purl.obolibrary.org/obo/ICASA_00038>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00041> (irrigation_operation)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00041> "Irrigation operation (e.g. furrow, sprinkler, drip...)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00041> "IROP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00041> "IROP")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00041> "irrigation_operation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00041> <http://purl.obolibrary.org/obo/ICASA_00038>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00042> (automatic_application_method)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00042> "Method for automatic applications")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00042> "IAME")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00042> "IAME")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00042> "automatic_application_method"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00042> <http://purl.obolibrary.org/obo/ICASA_00037>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00043> (automatic_irrigation_amount_applied)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00043> "Irrigation amount, automatic application")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00043> "IAMT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00043> "IAMT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00043> "mm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00043> "automatic_irrigation_amount_applied"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00043> <http://purl.obolibrary.org/obo/ICASA_00037>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00044> (automatic_irrigation_ending_water)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00044> "Irrigation, ending percent available, automatic application")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00044> "IREPT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00044> "IREPT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00044> "%")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00044> "automatic_irrigation_ending_water"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00044> <http://purl.obolibrary.org/obo/ICASA_00037>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00045> (automatic_irrigation_management_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00045> "Irrigation management, reference soil depth for automatic application")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00045> "IRMDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00045> "IRMDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00045> "cm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00045> "automatic_irrigation_management_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00045> <http://purl.obolibrary.org/obo/ICASA_00037>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00046> (automatic_irrigation_water_threshold)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00046> "Irrigation threshold water content for automatic application")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00046> "IRTHR")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00046> "IRTHR")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00046> "%")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00046> "automatic_irrigation_water_threshold"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00046> <http://purl.obolibrary.org/obo/ICASA_00037>)
 
-# Class: <http://purl.obolibrary.org/obo/ICASA_00047> (organic_material_application)
+# Class: <http://purl.obolibrary.org/obo/ICASA_00047> (organic_material_applications)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00047> "organic_material_application"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00047> "organic_material_applications"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00047> <http://purl.obolibrary.org/obo/ICASA_00012>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00048> (organic_material)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00048> "Organic material, identifying code")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00048> "OMCD")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00048> "OMCD")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00048> "organic_material"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00048> <http://purl.obolibrary.org/obo/ICASA_00047>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00049> (organic_material_application_amount)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00049> "Organic materials application amount, dry weight basis")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00049> "OMAMT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00049> "OMAMT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00049> "kg/ha")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00049> "organic_material_application_amount"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00049> <http://purl.obolibrary.org/obo/ICASA_00047>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00050> (organic_material_application_date)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00050> "Organic materials application date")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00050> "OMDAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00050> "OMDAT")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00050> "organic_material_application_date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00050> <http://purl.obolibrary.org/obo/ICASA_00047>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00051> (planting_date)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00051> "Planting or sowing date")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00051> "PDATE")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00051> "PDATE")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00051> "planting_date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00051> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00052> (planting_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00052> "Planting depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00052> "PLDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00052> "PLDP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00052> "mm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00052> "planting_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00052> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00053> (planting_distribution)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00053> "Planting distribution")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00053> "PLDS")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00053> "PLDS")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00053> "planting_distribution"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00053> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00054> (planting_material)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00054> "Planting material")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00054> "PLMA")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00054> "PLMA")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00054> "planting_material"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00054> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00055> (plant_population_at_planting)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00055> "Plant population at planting")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00055> "PLPOP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00055> "PLPOP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00055> "number/m2")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00055> "plant_population_at_planting"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00055> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00056> (row_spacing)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00056> "Row spacing")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00056> "PLRS")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00056> "PLRS")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00056> "cm")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00056> "row_spacing"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00056> <http://purl.obolibrary.org/obo/ICASA_00013>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00057> (treatment_name)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00057> "Treatment name")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00057> "TRT_NAME")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00057> "TRT_NAME")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00057> "treatment_name"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00057> <http://purl.obolibrary.org/obo/ICASA_00014>)
 
@@ -413,21 +555,33 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00060> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00061> (drainage_rate_per_day)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00061> "Drainage rate as fraction per day")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00061> "SLDR")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00061> "SLDR")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00061> "drainage_rate_per_day"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00061> <http://purl.obolibrary.org/obo/ICASA_00060>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00062> (runoff_curve_number)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00062> "Runoff curve no. (Soil Conservation Service)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00062> "SLRO")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00062> "SLRO")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00062> "runoff_curve_number"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00062> <http://purl.obolibrary.org/obo/ICASA_00060>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00063> (soil_albedo)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00063> "Soil albedo, dry soil")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00063> "SALB")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00063> "SALB")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00063> "soil_albedo"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00063> <http://purl.obolibrary.org/obo/ICASA_00060>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00064> (soil_fertility_on_photosynthesis)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00064> "Soil fertility effect on photosynthesis (0 to 1 scale)")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00064> "SLPF")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00064> "SLPF")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00064> "soil_fertility_on_photosynthesis"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00064> <http://purl.obolibrary.org/obo/ICASA_00060>)
 
@@ -438,91 +592,145 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00065> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00066> (soil_texture)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00066> "Soil texture")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00066> "SLTX")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00066> "SLTX")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00066> "soil_texture"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00066> <http://purl.obolibrary.org/obo/ICASA_00060>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00067> (name_of_soil_profile)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00067> "Name of soil profile, usually the soil series name or equivalent. Use soil_site for specific profile locations")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00067> "SOIL_NAME")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00067> "SOIL_NAME")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00067> "name_of_soil_profile"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00067> <http://purl.obolibrary.org/obo/ICASA_00059>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00068> (soil_profile_ID)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00068> "Soil profile identifier")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00068> "SOIL_ID")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00068> "SOIL_ID")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00068> "soil_profile_ID"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00068> <http://purl.obolibrary.org/obo/ICASA_00059>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00069> (saturated_hydraulic_conductivity)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00069> "Saturated hydraulic conductivity")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00069> "SKSAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00069> "SKSAT")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00069> "saturated_hydraulic_conductivity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00069> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00070> (soil_clay_fraction)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00070> "Soil texture, clay (<0.002 mm), weight percent of fine earth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00070> "SLCLY")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00070> "SLCLY")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00070> "soil_clay_fraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00070> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00071> (soil_coarse_fraction)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00071> "Soil texture, coarse fraction (>2 mm), weight percent of fine earth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00071> "SLCF")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00071> "SLCF")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00071> "soil_coarse_fraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00071> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00072> (soil_field_water_cap_1)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00072> "Soil water content at 1/3 atmosphere pressure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00072> "SLFC1")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00072> "SLFC1")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00072> "soil_field_water_cap_1"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00072> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00073> (soil_layer_base_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00073> "Soil layer base depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00073> "SLLB")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00073> "SLLB")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00073> "soil_layer_base_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00073> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00074> (soil_layer_moist_bulk_density)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00074> "Soil bulk density when moist for layer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00074> "SLBDM")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00074> "SLBDM")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00074> "soil_layer_moist_bulk_density"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00074> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00075> (soil_layer_organic_carbon)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00075> "Total soil organic carbon by layer")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00075> "SLOC")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00075> "SLOC")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00075> "soil_layer_organic_carbon"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00075> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00076> (soil_layer_top_depth)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00076> "Soil layer top depth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00076> "SLLT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00076> "SLLT")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00076> "soil_layer_top_depth"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00076> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00077> (soil_organic_nitrogen_concentration)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00077> "Nitrogen, total soil organic")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00077> "SLNI")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00077> "SLNI")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00077> "soil_organic_nitrogen_concentration"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00077> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00078> (soil_sand_fraction)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00078> "Soil texture, sand (0.05 to 2.0 mm), weight percent of fine earth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00078> "SLSND")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00078> "SLSND")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00078> "soil_sand_fraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00078> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00079> (soil_silt_fraction)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00079> "Soil texture, silt (0.05 to 0.002 mm), weight percent of fine earth")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00079> "SLSIL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00079> "SLSIL")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00079> "soil_silt_fraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00079> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00080> (soil_water_drained_upper_limit)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00080> "Soil water, drained upper limit")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00080> "SLDUL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00080> "SLDUL")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00080> "soil_water_drained_upper_limit"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00080> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00081> (soil_water_lower_limit)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00081> "Soil water, lower limit")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00081> "SLLL")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00081> "SLLL")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00081> "soil_water_lower_limit"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00081> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00082> (soil_water_saturated)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00082> "Soil water, saturated")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00082> "SLSAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00082> "SLSAT")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00082> "soil_water_saturated"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00082> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00083> (soil_water_wilting_point)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00083> "Soil water content (wilting point) at 15 atmosphere pressure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00083> "SLWP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00083> "SLWP")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00083> "soil_water_wilting_point"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00083> <http://purl.obolibrary.org/obo/ICASA_00065>)
 
@@ -543,53 +751,92 @@ SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00086> <http://purl.obolibrary.
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00087> (temperature_amplitude_monthly_average)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00087> "Temperature amplitude (peak to trough) of 12 monthly averages")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00087> "TAMP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00087> "TAMP")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00087> "temperature_amplitude_monthly_average"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00087> <http://purl.obolibrary.org/obo/ICASA_00085>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00088> (temperature_average_year)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00088> "Temperature average for whole year")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00088> "TAV")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00088> "TAV")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00088> "temperature_average_year"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00088> <http://purl.obolibrary.org/obo/ICASA_00085>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00089> (weather_station_code)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00089> "Weather station identifier to link to site information")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00089> "WST_ID")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00089> "WST_ID")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00089> "weather_station_code"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00089> <http://purl.obolibrary.org/obo/ICASA_00085>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00090> (weather_station_latitude)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00090> "Latitude of station, degrees decimal with North as positive value")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00090> "WST_LAT")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00090> "WST_LAT")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00090> "weather_station_latitude"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00090> <http://purl.obolibrary.org/obo/ICASA_00085>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00091> (weather_station_longitude)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00091> "Longitude of station, degrees decimals with East as positive value")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00091> "WST_LONG")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00091> "WST_LONG")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00091> "weather_station_longitude"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00091> <http://purl.obolibrary.org/obo/ICASA_00085>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00092> (maximum_temperature)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00092> "Temperature of air maximum")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00092> "TMAX")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00092> "TMAX")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00092> "maximum_temperature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00092> <http://purl.obolibrary.org/obo/ICASA_00086>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00093> (minimum_temperature)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00093> "Temperature of air minimum")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00093> "TMIN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00093> "TMIN")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00093> "minimum_temperature"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00093> <http://purl.obolibrary.org/obo/ICASA_00086>)
 
-# Class: <http://purl.obolibrary.org/obo/ICASA_00094> (rain_snow_fall)
+# Class: <http://purl.obolibrary.org/obo/ICASA_00094> (precipitation)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00094> "rain_snow_fall"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00094> "Rainfall, including moisture in snow, in one day")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00094> "RAIN")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00094> "RAIN")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00094> "precipitation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00094> <http://purl.obolibrary.org/obo/ICASA_00086>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00095> (solar_radiation)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00095> "Solar radiation")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00095> "SRAD")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00095> "SRAD")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00095> "solar_radiation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00095> <http://purl.obolibrary.org/obo/ICASA_00086>)
 
 # Class: <http://purl.obolibrary.org/obo/ICASA_00096> (weather_date)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00096> "Date for daily weather, field observations, etc")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00096> "W_DATE")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00096> "W_DATE")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00096> "weather_date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00096> <http://purl.obolibrary.org/obo/ICASA_00086>)
+
+# Class: <http://purl.obolibrary.org/obo/ICASA_00098> (residue_incorporated)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/ICASA_00098> "Residue incorporation percentage")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00001> <http://purl.obolibrary.org/obo/ICASA_00098> "ICRIP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00002> <http://purl.obolibrary.org/obo/ICASA_00098> "ICRIP")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/ICASA_00097> <http://purl.obolibrary.org/obo/ICASA_00098> "%")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ICASA_00098> "residue_incorporated"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/ICASA_00098> <http://purl.obolibrary.org/obo/ICASA_00010>)
 
 
 )
